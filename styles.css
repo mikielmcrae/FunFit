@@ -1,0 +1,306 @@
+body {
+    /* body element should take up entire screen, be centred */
+    width: 100%;
+    margin: auto;
+    font-family: arial, sans-serif;
+    font-size: 1.2em;
+    color: #82f5f1;
+    /* greyish blue background for some contrast */
+    background-color: #2905ab;
+    
+    
+}
+
+/* header should extend full width of its parent, body */
+header {
+    width: 100%; 
+}
+ul {
+    list-style: none;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo {
+    height: 6em;
+}
+
+.description {
+	width: fit-content;
+}
+textarea {
+	min-height: fit-content;
+}
+.buttons {
+    width: 100%;
+    padding: 80px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.class-details {
+	margin: auto;
+}
+.btn {
+    margin: 12px 0px;
+    height: 60px;
+    width: 150px;
+    border-radius: 50px;
+    border-color: transparent;
+    color: white;
+    background-color: #567dce;
+    font-weight: bold;
+    font-size: 1.01em;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #608ae4;
+    box-shadow: 2px 2px 2px rgb(63, 62, 62);
+    font-size: 1.02em;
+}
+.btn:active{
+    background-color: #4868ad;
+    box-shadow: none;
+    font-size: 1em;
+}
+
+.class-info {
+	width: 50ch;
+	background-color: white;
+	border-radius: 10px;
+	text-align: center;
+	color: #2905ab;
+	padding: 20px 15px;
+	font-weight: bold;
+	margin: auto;
+}
+.menubar {
+    width: 35px;
+    height: 4px;
+    background-color: #82f5f1;
+    margin: 6px 10px;
+    border-radius: 2px;
+}
+
+#about-container {
+    display: flex;
+    max-width: 50ch;
+    max-height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: .9em;
+    text-align: center;
+  
+}
+
+#about {
+    max-width: 200ch;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height:1.3em;
+}
+.nav-menu:hover {
+    cursor: pointer;
+}
+.nav-menu {
+    margin-right: 10px;
+}
+.testimonial {
+    background-color: white;
+    color:#2905ab;
+
+    width: 80%;
+  
+    
+    display: flex;
+    margin: 20px auto;
+    border-radius: 10px;
+    border-style: solid 1px black;
+    padding: 5% 6%;
+}
+.links {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+ 
+}
+.site-link {
+    color:#2905ab;
+    background-color: rgb(226, 226, 226);
+    font-weight: bold;
+    text-align: center;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    display: flex;
+	align-items: center;
+    margin: 20px 0;
+    border-radius: 10px;
+    border-style: solid 1px black;
+    padding: 8% 6%;
+	
+}
+.site-link:hover{
+	
+    color:#65c2ab;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px white;
+}
+a {
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+ 
+}
+
+
+.further-info {
+
+    font-size: .7em;
+    margin: 0 20%;
+	
+}
+
+.membership {
+    color:#2905ab;
+    background-color: rgb(226, 226, 226);
+    font-weight: bold;
+    text-align: center;
+    width:  20ch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    display: flex;
+    margin: auto;
+    border-radius: 10px;
+    border-style: solid 1px black;
+    padding: 8% 3%;
+}
+
+.memberships {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    
+}
+
+.form-container {
+   
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 570px) {
+    .site-link {
+        font-size: 1.2em;
+        padding: 30px 35px;
+    }
+    #link-container {
+        display: flex;
+    
+        justify-content: center;
+    }
+    #mission {
+        grid-area: top;
+    }
+    #classes {
+        grid-area: top;
+    }
+    #testimonials {
+        grid-area: main;
+
+    }
+    #contact {
+        grid-area: main;
+    }
+
+
+    #about-container {
+        max-width: 100ch;
+        margin: auto;
+        font-size: 1em;
+    }
+    .links {
+        margin: auto;
+        display: grid;
+        grid-column: auto auto;
+        grid-column-gap: 30px;
+        grid-template-areas: "top top" "main main";
+    }
+    .btn {
+        width: 220px;
+        font-size: 1.3em;
+        height: 70px;
+    }
+}
+
+ 
+@media screen and (min-width: 1000px) {
+    .memberships {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    .membership {
+        font-size: 1.3em;
+        height: 300px;
+        margin: 0 30px;
+    }
+}
+
+@media screen and (min-width: 1840px) {
+    .links {
+        margin: 20px 0;
+        padding:  50px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+
+    }
+        
+    .site-link {
+        font-size: 1.5em;
+        height: 150px;
+        margin: 0px 20px;
+        width: 250px;
+        padding: 40px 55px;
+    }
+
+    #about {
+        max-width: 80ch;
+        font-size: 1.4em;
+    }
+
+    .buttons {
+       
+    }
+    .btn {
+        width: 400px;
+        height: 80px;
+        font-size: 1.3em;
+    }
+    .btn:hover{
+        font-size: 1.25em;
+    }
+}
